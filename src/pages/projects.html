@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — Eklakh Dewan</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-dot"></span>eklakh.dewan</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="recruiter.html">Recruiters</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <a href="https://drive.google.com/file/d/1AnkPW0jqdqRUwSJReCvHOcT-m_KYwCdm/view?usp=sharing" class="nav-cta" target="_blank" rel="noopener">↓ resume.pdf</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- EXPERIENCE -->
+  <section class="stage wrap" style="padding-bottom:70px">
+    <div class="stage-label"><span class="num">02</span> PROCESS</div>
+    <h2 class="stage-title">Experience</h2>
+    <p class="stage-sub">One internship, applied across the full ML lifecycle — not just modeling.</p>
+
+    <div class="exp-card reveal">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">Data Science / AI-ML Engineering Intern</div>
+          <div class="exp-org">Flowrage Technology · Remote</div>
+        </div>
+        <div class="exp-meta">JAN 2025 — FEB 2025</div>
+      </div>
+      <ul class="exp-list">
+        <li>Developed and deployed three ML-backed prototypes using Python, FastAPI, and Streamlit, with a focus on reproducibility and automated preprocessing.</li>
+        <li>Refactored backend preprocessing and serialization logic, reducing inference latency variability by ~20% and simplifying model integration.</li>
+        <li>Improved model accuracy by ~12% through feature engineering, hyperparameter tuning, and statistical analysis.</li>
+        <li>Built multilingual NLP preprocessing pipelines and internal analytics dashboards (Plotly, Tableau) used by product and engineering partners for feature prioritization.</li>
+        <li>Maintained a modular, production-quality codebase using Git-based collaboration workflows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="stage stage--tight wrap">
+    <div class="stage-label"><span class="num">03</span> OUTPUT</div>
+    <h2 class="stage-title">Selected Projects</h2>
+    <p class="stage-sub">Six builds spanning agentic systems, explainable ML, and multilingual NLP — chosen as the strongest, most representative work across every iteration of this portfolio.</p>
+
+    <div class="proj-toolbar">
+      <div class="proj-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="projSearch" placeholder="Search projects, tech, keywords…" aria-label="Search projects"/>
+      </div>
+      <div class="proj-filters" id="projFilters" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-pill is-active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="ai">Artificial Intelligence</button>
+        <button class="filter-pill" data-filter="ml">Machine Learning</button>
+        <button class="filter-pill" data-filter="nlp">NLP</button>
+        <button class="filter-pill" data-filter="python">Python</button>
+      </div>
+    </div>
+
+    <p class="proj-count" id="projCount">Showing 6 of 6 projects</p>
+
+    <div class="proj-grid" id="projGrid">
+
+      <article class="proj-card reveal" data-categories="ai python" data-search="ai agent workflow automation platform python langchain fastapi yaml docker agentic">
+        <div class="proj-thumb"><span class="proj-cat-badge">Artificial Intelligence</span><span class="proj-thumb-mono">01</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 01</span></div>
+          <h3>AI Agent Workflow Automation Platform</h3>
+          <p class="proj-overview">An LLM-powered agentic platform for multi-step task execution, built on structured prompt pipelines and modular API orchestration. A YAML-driven configuration layer lets new workflows be composed without touching code, and the whole platform is containerized with Docker for consistent deployment.</p>
+          <div class="proj-tags"><span>Python</span><span>LangChain</span><span>FastAPI</span><span>YAML</span><span>Docker</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-categories="ml python" data-search="ai career path recommendation system python scikit-learn shap fastapi streamlit explainable">
+        <div class="proj-thumb"><span class="proj-cat-badge">Machine Learning</span><span class="proj-thumb-mono">02</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 02</span></div>
+          <h3>AI Career Path Recommendation System</h3>
+          <p class="proj-overview">An end-to-end recommendation pipeline that doesn't just predict — it explains. SHAP interpretability surfaces why each career suggestion was made, served through a real-time FastAPI backend with feature engineering and ranking logic, and a Streamlit front-end for fast user testing.</p>
+          <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>FastAPI</span><span>Streamlit</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-categories="nlp ml python" data-search="job recommendation resume matching python bert nlp streamlit semantic tf-idf cosine similarity">
+        <div class="proj-thumb"><span class="proj-cat-badge">NLP</span><span class="proj-thumb-mono">03</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 03</span></div>
+          <h3>Job Recommendation & Resume Matching</h3>
+          <p class="proj-overview">Resume-to-job semantic matching using BERT embeddings combined with TF-IDF features and cosine similarity ranking. Extracts structured skills from resumes and runs a gap-analysis module to recommend learning paths — delivered as a Streamlit prototype for rapid iteration.</p>
+          <div class="proj-tags"><span>Python</span><span>BERT</span><span>NLP</span><span>Streamlit</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-categories="nlp ai python" data-search="multilingual ai chatbot python transformers hugging face docker conversational intent entity recognition">
+        <div class="proj-thumb"><span class="proj-cat-badge">NLP</span><span class="proj-thumb-mono">04</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 04</span></div>
+          <h3>Multilingual AI Chatbot</h3>
+          <p class="proj-overview">An intent-classification and entity-recognition pipeline built on multilingual transformer models, supporting 3+ languages with a translation layer for fallback cases. Packaged with Docker for consistent testing and evaluation, and exposed via REST API for channel-agnostic deployment.</p>
+          <div class="proj-tags"><span>Python</span><span>Transformers</span><span>Hugging Face</span><span>Docker</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-categories="ml python" data-search="career path recommender python web scraping tableau market intelligence skill trajectory">
+        <div class="proj-thumb"><span class="proj-cat-badge">Machine Learning</span><span class="proj-thumb-mono">05</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 05</span></div>
+          <h3>Career Path Recommender</h3>
+          <p class="proj-overview">Aggregated job-market signals from multiple portals to compute trending skills and role growth trajectories. Trained models mapping user skill profiles to probable transition pathways, visualized through interactive Tableau dashboards.</p>
+          <div class="proj-tags"><span>Python</span><span>Web Scraping</span><span>Tableau</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-categories="ml python" data-search="churn prediction explainability python xgboost shap risk modeling retention">
+        <div class="proj-thumb"><span class="proj-cat-badge">Machine Learning</span><span class="proj-thumb-mono">06</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 06</span></div>
+          <h3>Churn Prediction & Explainability</h3>
+          <p class="proj-overview">Tree-based ensemble models (XGBoost) for churn prediction, validated with cross-validation and AUC metrics. SHAP attribution surfaces the key drivers behind each prediction for business-facing retention planning.</p>
+          <div class="proj-tags"><span>Python</span><span>XGBoost</span><span>SHAP</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-action is-disabled" title="No public live demo for this project yet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Live Demo
+            </span>
+            <a class="proj-action is-primary" href="contact.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="proj-empty" id="projEmpty">No projects match your search or filter. Try a different keyword or category.</p>
+  </section>
+
+  <section class="stage stage--tight wrap">
+    <div class="deploy" style="grid-template-columns:1fr">
+      <div>
+        <h2>Want the deeper technical breakdown on any of these?</h2>
+        <p>Happy to walk through architecture decisions, trade-offs, or live-demo any of the above.</p>
+        <div style="margin-top:24px"><a href="contact.html" class="btn btn-solid">Discuss a Project →</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 EKLAKH DEWAN — DESIGNED, BUILT & EXPLAINED END-TO-END</p>
+    <div class="footer-status"><span class="dot"></span>SYSTEM STATUS: AVAILABLE</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

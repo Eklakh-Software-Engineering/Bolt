@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Eklakh Dewan — AI Engineer, Machine Learning & Full Stack Developer. Building intelligent applications with AI, ML, MERN, Flutter and Python. Open to internships & full-time 2027."/>
+<title>Eklakh Dewan — AI Engineer | ML | Full Stack Developer</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Recruiter mode toggle (fixed) -->
+<button class="recruiter-toggle" id="recruiterToggle" aria-pressed="false" title="Toggle recruiter-friendly view">
+  <span class="rt-dot"></span>RECRUITER MODE
+</button>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-dot"></span>eklakh.dewan</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="recruiter.html">Recruiters</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <a href="https://drive.google.com/file/d/1AnkPW0jqdqRUwSJReCvHOcT-m_KYwCdm/view?usp=sharing" class="nav-cta" target="_blank" rel="noopener">↓ resume.pdf</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap" id="home">
+
+    <!-- Recruiter quick-nav strip (only visible in recruiter mode) -->
+    <div class="rm-strip">
+      <strong>⚡ RECRUITER VIEW</strong>
+      Jump to:
+      <a href="#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#timeline">Timeline</a>
+      <a href="recruiter.html">Full Profile →</a>
+      <a href="https://drive.google.com/file/d/1AnkPW0jqdqRUwSJReCvHOcT-m_KYwCdm/view?usp=sharing" target="_blank" rel="noopener">Download Resume ↗</a>
+    </div>
+
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="kicker"><span class="blink"></span>STATUS: OPEN_TO_OPPORTUNITIES</div>
+        <h1 style="margin-bottom:6px">Eklakh Dewan</h1>
+        <p class="hero-subtitle">AI Engineer <span class="sep">|</span> Machine Learning <span class="sep">|</span> Full Stack Developer</p>
+        <p class="hero-lead">
+          Building intelligent applications using <strong>AI</strong>, <strong>Machine Learning</strong>,
+          the <strong>MERN Stack</strong>, <strong>Flutter</strong>, and <strong>Python</strong> —
+          end-to-end, from model to interface.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-solid">View Projects →</a>
+          <a href="https://drive.google.com/file/d/1AnkPW0jqdqRUwSJReCvHOcT-m_KYwCdm/view?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener">Download Resume</a>
+          <a href="contact.html" class="btn btn-outline">Contact Me</a>
+          <a href="https://github.com/Eklakh-Dewan" class="btn btn-ghost-icon" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="badge-row">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Open to Internship</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Available Full-Time (2027)</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Remote</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Hybrid</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Open to Relocation</span>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><span class="v" data-count="6" data-suffix="+">0</span><span class="l">Projects</span></div>
+          <div class="hstat"><span class="v" data-count="3">0</span><span class="l">Certifications</span></div>
+          <div class="hstat"><span class="v" data-count="10" data-suffix="+">0</span><span class="l">GitHub Repos</span></div>
+          <div class="hstat"><span class="v" data-count="1">0</span><span class="l">Internship</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="trace-card">
+          <div class="trace-head">
+            <span class="trace-dot r"></span><span class="trace-dot y"></span><span class="trace-dot g"></span>
+            <span class="trace-name">inference_trace.json</span>
+          </div>
+          <div class="trace-body" id="traceBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 INPUT ============ -->
+  <section class="stage wrap" id="input">
+    <div class="stage-label"><span class="num">01</span> INPUT</div>
+    <h2 class="stage-title">A B.Tech engineer who treats ML like software, not a notebook experiment.</h2>
+    <p class="stage-sub">
+      Specializing in NLP, agentic LLM workflows, and explainable ML — with hands-on production experience
+      across data pipelines, REST APIs, and deployment. Full profile and education on the
+      <a href="about.html" style="color:var(--signal); text-decoration:underline; text-decoration-color:var(--signal-dim)">About page →</a>
+    </p>
+  </section>
+
+  <!-- ============ 02 AI LAB ============ -->
+  <section class="stage wrap" id="ailab">
+    <div class="stage-label"><span class="num">02</span> AI LAB</div>
+    <h2 class="stage-title">What I actually build</h2>
+    <p class="stage-sub">These are the categories of intelligent systems I design, ship, and can speak to in depth in an interview.</p>
+    <div class="ailab-grid">
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">🤖</span>
+        <h3>Agentic AI Systems</h3>
+        <p>Multi-step LLM pipelines that orchestrate tools, APIs, and memory to execute complex tasks autonomously.</p>
+        <div class="ailab-tags"><span>LangChain</span><span>FastAPI</span><span>YAML</span><span>Docker</span></div>
+        <div class="ailab-status"><span class="dot"></span>1 shipped project</div>
+      </div>
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">🔍</span>
+        <h3>Explainable ML</h3>
+        <p>Recommendation and classification models that surface their reasoning — SHAP attribution, feature importance, audit trails.</p>
+        <div class="ailab-tags"><span>Scikit-learn</span><span>SHAP</span><span>XGBoost</span></div>
+        <div class="ailab-status"><span class="dot"></span>2 shipped projects</div>
+      </div>
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">🗣️</span>
+        <h3>NLP Pipelines</h3>
+        <p>Multilingual transformers, intent classification, semantic search, and resume-to-job matching systems.</p>
+        <div class="ailab-tags"><span>BERT</span><span>Transformers</span><span>TF-IDF</span></div>
+        <div class="ailab-status"><span class="dot"></span>2 shipped projects</div>
+      </div>
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">⚙️</span>
+        <h3>ML Engineering</h3>
+        <p>FastAPI inference services, preprocessing pipelines, Docker containerisation, and reproducible experiment tracking.</p>
+        <div class="ailab-tags"><span>FastAPI</span><span>Streamlit</span><span>Pandas</span></div>
+        <div class="ailab-status"><span class="dot"></span>Internship @ Flowrage</div>
+      </div>
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">📊</span>
+        <h3>Data & Analytics</h3>
+        <p>End-to-end pipelines from raw ingestion to Tableau/Plotly dashboards used by product and engineering stakeholders.</p>
+        <div class="ailab-tags"><span>Pandas</span><span>Plotly</span><span>Tableau</span></div>
+        <div class="ailab-status"><span class="dot"></span>Production dashboards</div>
+      </div>
+
+      <div class="ailab-card reveal">
+        <span class="ailab-icon">🌐</span>
+        <h3>Full Stack Integration</h3>
+        <p>MERN stack and Flutter applications that wrap ML models in interfaces real users interact with.</p>
+        <div class="ailab-tags"><span>React</span><span>Node.js</span><span>Flutter</span><span>MongoDB</span></div>
+        <div class="ailab-status"><span class="dot"></span>Active development</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 03 SKILLS ============ -->
+  <section class="stage stage--tight wrap" id="skills">
+    <div class="stage-label"><span class="num">03</span> PROCESS</div>
+    <h2 class="stage-title">Core stack</h2>
+    <p class="stage-sub">Confidence reflects depth of hands-on production use, not just familiarity.</p>
+    <div class="about-grid" style="grid-template-columns:1fr 1fr 1fr; gap:30px">
+      <div class="skill-block">
+        <h4>Languages</h4>
+        <div class="bar-row"><span class="bar-label">Python</span><div class="bar-track"><div class="bar-fill" data-pct="95"></div></div><span class="bar-pct">95%</span></div>
+        <div class="bar-row"><span class="bar-label">SQL</span><div class="bar-track"><div class="bar-fill" data-pct="80"></div></div><span class="bar-pct">80%</span></div>
+        <div class="bar-row"><span class="bar-label">Java</span><div class="bar-track"><div class="bar-fill" data-pct="70"></div></div><span class="bar-pct">70%</span></div>
+        <div class="bar-row"><span class="bar-label">JavaScript</span><div class="bar-track"><div class="bar-fill" data-pct="72"></div></div><span class="bar-pct">72%</span></div>
+      </div>
+      <div class="skill-block">
+        <h4>AI / ML</h4>
+        <div class="bar-row"><span class="bar-label">NLP / Transformers</span><div class="bar-track"><div class="bar-fill" data-pct="88"></div></div><span class="bar-pct">88%</span></div>
+        <div class="bar-row"><span class="bar-label">Scikit-learn</span><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div><span class="bar-pct">90%</span></div>
+        <div class="bar-row"><span class="bar-label">LangChain / Agents</span><div class="bar-track"><div class="bar-fill" data-pct="78"></div></div><span class="bar-pct">78%</span></div>
+        <div class="bar-row"><span class="bar-label">TensorFlow / Keras</span><div class="bar-track"><div class="bar-fill" data-pct="75"></div></div><span class="bar-pct">75%</span></div>
+      </div>
+      <div class="skill-block">
+        <h4>Engineering</h4>
+        <div class="bar-row"><span class="bar-label">FastAPI</span><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div><span class="bar-pct">85%</span></div>
+        <div class="bar-row"><span class="bar-label">Docker / Git</span><div class="bar-track"><div class="bar-fill" data-pct="80"></div></div><span class="bar-pct">80%</span></div>
+        <div class="bar-row"><span class="bar-label">React / Node.js</span><div class="bar-track"><div class="bar-fill" data-pct="70"></div></div><span class="bar-pct">70%</span></div>
+        <div class="bar-row"><span class="bar-label">AWS Fundamentals</span><div class="bar-track"><div class="bar-fill" data-pct="72"></div></div><span class="bar-pct">72%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 HOW I SOLVE PROBLEMS ============ -->
+  <section class="stage wrap" id="thinking">
+    <div class="stage-label"><span class="num">04</span> THINKING</div>
+    <h2 class="stage-title">How I solve problems</h2>
+    <p class="stage-sub">Every project I've shipped followed this process — click any stage to expand how I apply it.</p>
+
+    <div class="workflow-steps" id="workflowSteps">
+
+      <div class="workflow-step reveal" data-step="0">
+        <div class="workflow-step-header">
+          <span class="ws-num">01</span>
+          <span class="ws-icon">🎯</span>
+          <span class="ws-title">Define the Problem</span>
+          <span class="ws-badge">Always first</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>I don't start building until the problem is written down in one sentence a non-engineer could understand. Ambiguous requirements produce ambiguous models.</p>
+          <ul>
+            <li>What is the measurable outcome we're trying to improve?</li>
+            <li>Who uses this system and what do they need explained?</li>
+            <li>What does failure look like — and is it acceptable?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow-step reveal" data-step="1">
+        <div class="workflow-step-header">
+          <span class="ws-num">02</span>
+          <span class="ws-icon">🔬</span>
+          <span class="ws-title">Research & Data Audit</span>
+          <span class="ws-badge">Before modeling</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>I audit what data exists, what's missing, and what biases are already baked in before writing a single model line. A fast wrong model is still wrong.</p>
+          <ul>
+            <li>EDA to understand distributions, nulls, outliers</li>
+            <li>Domain research to understand what features matter</li>
+            <li>Baseline: what does a simple rule-based system achieve?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow-step reveal" data-step="2">
+        <div class="workflow-step-header">
+          <span class="ws-num">03</span>
+          <span class="ws-icon">🏗️</span>
+          <span class="ws-title">Architecture Design</span>
+          <span class="ws-badge">On paper first</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>I draw the data flow before writing code. This catches integration failures early — the hardest bugs to fix are the ones nobody modelled.</p>
+          <ul>
+            <li>Input → preprocessing → model → output schema</li>
+            <li>API contract defined before implementation</li>
+            <li>Deployment environment decided before training</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow-step reveal" data-step="3">
+        <div class="workflow-step-header">
+          <span class="ws-num">04</span>
+          <span class="ws-icon">💻</span>
+          <span class="ws-title">Build & Iterate</span>
+          <span class="ws-badge">Modular first</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>Each component is independently testable. I don't build monoliths — if a preprocessing step breaks, the model shouldn't need re-training to fix it.</p>
+          <ul>
+            <li>Modular pipelines with clear interfaces between stages</li>
+            <li>Version-controlled experiments, not ad-hoc notebooks</li>
+            <li>Feature engineering as a named, reusable module</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow-step reveal" data-step="4">
+        <div class="workflow-step-header">
+          <span class="ws-num">05</span>
+          <span class="ws-icon">📐</span>
+          <span class="ws-title">Evaluate & Explain</span>
+          <span class="ws-badge">With SHAP</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>Accuracy isn't enough. I use SHAP attribution and cross-validation to understand not just what the model predicts but why — especially for decisions that affect people.</p>
+          <ul>
+            <li>AUC, precision/recall curves, not just accuracy</li>
+            <li>SHAP waterfall and summary plots for stakeholders</li>
+            <li>Adversarial testing for edge cases</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workflow-step reveal" data-step="5">
+        <div class="workflow-step-header">
+          <span class="ws-num">06</span>
+          <span class="ws-icon">🚀</span>
+          <span class="ws-title">Deploy & Monitor</span>
+          <span class="ws-badge">Production-ready</span>
+          <svg class="ws-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="workflow-step-body">
+          <p>A model in a notebook is a hypothesis. I wrap inference in a tested FastAPI service, containerise with Docker, and add validation and logging before calling it deployed.</p>
+          <ul>
+            <li>FastAPI endpoints with input validation and error handling</li>
+            <li>Docker for reproducible deployment environments</li>
+            <li>Latency monitoring and graceful fallback behaviour</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 05 CAREER TIMELINE ============ -->
+  <section class="stage wrap" id="timeline">
+    <div class="stage-label"><span class="num">05</span> JOURNEY</div>
+    <h2 class="stage-title">Career timeline</h2>
+    <p class="stage-sub">From secondary school in Nepal to shipping AI systems at a tech company — the milestones that shaped how I build.</p>
+
+    <div class="timeline-wrap" id="careerTimeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">B.Tech — Artificial Intelligence & Data Science</span>
+            <span class="tl-type">EDUCATION</span>
+          </div>
+          <div class="tl-org">KPR Institute of Engineering and Technology (KPRIET) · Coimbatore, India</div>
+          <p class="tl-desc">CGPA 8.41/10. Core coursework in ML, NLP, Computer Vision, Generative AI, DSA, Software Engineering, and DBMS.</p>
+          <div class="tl-chips"><span>Sep 2023</span><span>→ Sep 2027</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">NPTEL Elite — NLP & Business Intelligence</span>
+            <span class="tl-type">CERTIFICATION</span>
+          </div>
+          <div class="tl-org">NPTEL · IIT Madras</div>
+          <p class="tl-desc">Dual Elite certification in Natural Language Processing and Business Intelligence & Analytics. Completed with distinction in both courses simultaneously.</p>
+          <div class="tl-chips"><span>Jan–Apr 2026</span><span>NLP: NPTEL26CS45S1450500180</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">HackVega 2.0 — National Hackathon</span>
+            <span class="tl-type">ACHIEVEMENT</span>
+          </div>
+          <div class="tl-org">HirePro × MyCareernet · National Level · Individual</div>
+          <p class="tl-desc">Competing individually across three rounds: aptitude & logical reasoning, technical coding, and advanced live coding with AI tools — representing KPRIET alongside engineering students from 2026–2029 cohorts.</p>
+          <div class="tl-chips"><span>June 2026</span><span>Individual</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">AI/ML Engineering Intern</span>
+            <span class="tl-type">EXPERIENCE</span>
+          </div>
+          <div class="tl-org">Flowrage Technology · Remote</div>
+          <p class="tl-desc">Developed and deployed three ML-backed prototypes using Python, FastAPI, and Streamlit. Reduced inference latency ~20% and improved model accuracy ~12% through feature engineering and pipeline refactoring. Built multilingual NLP pipelines and analytics dashboards used in production.</p>
+          <div class="tl-chips"><span>Jan 2025</span><span>Feb 2025</span><span>Python</span><span>FastAPI</span><span>Streamlit</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">AWS Certified Cloud Practitioner</span>
+            <span class="tl-type">CERTIFICATION</span>
+          </div>
+          <div class="tl-org">Amazon Web Services</div>
+          <p class="tl-desc">Cloud architecture fundamentals, EC2, S3, IAM, cost management, and core AWS service models.</p>
+          <div class="tl-chips"><span>AWS</span><span>Cloud</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-title">Higher Secondary — Science Stream</span>
+            <span class="tl-type">EDUCATION</span>
+          </div>
+          <div class="tl-org">Hari Khetan Multiple Campus · Birgunj, Nepal</div>
+          <p class="tl-desc">Physics, Chemistry, Mathematics and Computer Science. Foundation for quantitative reasoning and algorithmic thinking.</p>
+          <div class="tl-chips"><span>Grades 11–12</span><span>Science Stream</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--amber); box-shadow:0 0 0 3px var(--amber-dim)"></div>
+        <div class="tl-content" style="border-color:rgba(242,166,90,0.3)">
+          <div class="tl-header">
+            <span class="tl-title">Next — Senior AI Engineer Role (2027)</span>
+            <span class="tl-type" style="color:var(--amber); background:var(--amber-dim)">GOAL</span>
+          </div>
+          <div class="tl-org" style="color:var(--amber)">Target: AI-first companies · India / Global</div>
+          <p class="tl-desc">After graduating in 2027, targeting roles at AI-first companies working on production ML systems, LLM applications, or intelligent product engineering.</p>
+          <div class="tl-chips"><span>2027</span><span>Open to Relocation</span><span>Remote / Hybrid</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 06 FEATURED PROJECTS ============ -->
+  <section class="stage wrap" id="output">
+    <div class="stage-label"><span class="num">06</span> OUTPUT</div>
+    <h2 class="stage-title">Featured work</h2>
+    <p class="stage-sub">Six shipped projects. Click "Case Study" on any card to see the full problem → solution → impact breakdown.</p>
+
+    <div class="proj-grid">
+      <article class="proj-card">
+        <div class="proj-thumb"><span class="proj-cat-badge">Artificial Intelligence</span><span class="proj-thumb-mono">01</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 01</span></div>
+          <h3>AI Agent Workflow Automation Platform</h3>
+          <p class="proj-overview">An LLM-powered agent platform orchestrating multi-step tasks through structured prompt pipelines and a YAML-driven config layer for composing new workflows without code changes.</p>
+          <div class="proj-tags"><span>Python</span><span>LangChain</span><span>FastAPI</span><span>Docker</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>GitHub</a>
+            <button class="proj-action is-primary" data-case="0">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Case Study
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-thumb"><span class="proj-cat-badge">Machine Learning</span><span class="proj-thumb-mono">02</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 02</span></div>
+          <h3>AI Career Path Recommender</h3>
+          <p class="proj-overview">Explainable ML recommendation engine using SHAP to surface why each suggestion was made, served through a real-time FastAPI backend.</p>
+          <div class="proj-tags"><span>Scikit-learn</span><span>SHAP</span><span>FastAPI</span><span>Streamlit</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>GitHub</a>
+            <button class="proj-action is-primary" data-case="1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Case Study
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-thumb"><span class="proj-cat-badge">NLP</span><span class="proj-thumb-mono">03</span></div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-idx">PROJECT / 03</span></div>
+          <h3>Job Recommendation Engine</h3>
+          <p class="proj-overview">Resume-to-job semantic matching using BERT embeddings, TF-IDF, and cosine similarity — with a skills gap-analysis module recommending learning paths.</p>
+          <div class="proj-tags"><span>BERT</span><span>NLP</span><span>FastAPI</span><span>Streamlit</span></div>
+          <div class="proj-actions">
+            <a class="proj-action" href="https://github.com/Eklakh-Dewan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.39.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.17a10.95 10.95 0 0 1 5.76 0c2.2-1.48 3.16-1.17 3.16-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>GitHub</a>
+            <button class="proj-action is-primary" data-case="2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Case Study
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top:40px">
+      <a href="projects.html" class="btn btn-outline">See all 6 projects with full case studies →</a>
+    </div>
+  </section>
+
+  <!-- ============ 07 DEPLOY CTA ============ -->
+  <section class="stage wrap" id="deploy">
+    <div class="stage-label"><span class="num">07</span> DEPLOY</div>
+    <div class="deploy">
+      <div>
+        <h2>Let's ship something that works in production, not just in a notebook.</h2>
+        <p>Open to AI/ML internships, research collaborations, and software engineering roles. Reach out — I reply fast.</p>
+      </div>
+      <div class="deploy-actions">
+        <a href="contact.html" class="btn btn-solid" style="justify-content:center">Start a Conversation →</a>
+        <a href="recruiter.html" class="btn btn-outline" style="justify-content:center">Recruiter Profile →</a>
+        <a href="https://drive.google.com/file/d/1AnkPW0jqdqRUwSJReCvHOcT-m_KYwCdm/view?usp=sharing" class="btn btn-outline" style="justify-content:center" target="_blank" rel="noopener">View Resume ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CASE STUDY MODAL ============ -->
+<div class="case-study-overlay" id="caseOverlay" role="dialog" aria-modal="true" aria-label="Project case study">
+  <div class="case-study-panel" id="casePanel">
+    <div class="cs-head">
+      <h2 id="csTitle"></h2>
+      <button class="cs-close" id="caseClose" aria-label="Close case study">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="cs-body" id="caseBody"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 EKLAKH DEWAN — DESIGNED, BUILT & EXPLAINED END-TO-END</p>
+    <div class="footer-status"><span class="dot"></span>SYSTEM STATUS: AVAILABLE</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
